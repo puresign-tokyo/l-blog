@@ -1,2 +1,3 @@
-# Welcome to Nuxt Content Starter
+# えるろだブログへようこそ
 
+- [開発者ブログをはじめました](/article001)

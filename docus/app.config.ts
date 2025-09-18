@@ -6,4 +6,10 @@ export default defineAppConfig({
       alt: 'Site logo',
     },
   },
+  ui: {
+    colors: {
+      primary: 'violet',
+      neutral: 'zinc',
+    },
+  },
 })
