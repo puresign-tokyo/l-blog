@@ -49,7 +49,7 @@ KISさま「ごちうさの神紗映月から `えるろだ` で！」
 
 [^1]: [RFC1035の2.3.3](https://datatracker.ietf.org/doc/html/rfc1035#section-2.3.3) によるとドメインは大文字小文字を区別しない `case-insensitive` とのこと。つまり `L-uploader.puresign.tokyo` のように大文字の `L` のドメイン名を強制してブラウザなどに表示することはできない。
 
-[^2]: [RFC1035の2.3.1](https://datatracker.ietf.org/doc/html/rfc1035#section-2.3.1) のABNFにて数字始まりのドメインは禁止されていましたが、 [RFC1123の2.1](https://datatracker.ietf.org/doc/html/rfc1123#section-2.1) にて数字始まりのドメインが許可されるようになったとのこと。つまり `1-uploader.puresign.tokyo` というドメインはRFCに準拠していました。
+[^2]: [RFC1035の2.3.1](https://datatracker.ietf.org/doc/html/rfc1035#section-2.3.1) のABNFにて数字始まりのドメインは禁止されていましたが、 [RFC1123の2.1](https://datatracker.ietf.org/doc/html/rfc1123#section-2.1) にて数字始まりのドメインが許可されるようになったとのこと。つまり `1-uploader.puresign.tokyo` というドメインはRFCに準拠しています。
 
 これについてchatgptくんに聞いてみたところ `そういう危機感を持っているだけで十分です！` と言われました。さらに、
 
