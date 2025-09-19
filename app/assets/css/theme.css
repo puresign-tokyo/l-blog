@@ -26,6 +26,16 @@
   --body-text: #221433;
   --surface-soft: rgba(255, 255, 255, 0.9);
   --surface-strong: rgba(255, 255, 255, 0.98);
+  --surface-border: rgba(130, 85, 200, 0.12);
+}
+
+html.dark {
+  --body-bg: #0b0616;
+  --body-text: #f3edff;
+  --surface-soft: rgba(33, 23, 51, 0.88);
+  --surface-strong: rgba(18, 12, 36, 0.94);
+  --surface-border: rgba(164, 134, 220, 0.38);
+  color-scheme: dark;
 }
 
 html {
@@ -38,12 +48,12 @@ body {
   color: var(--body-text);
   font-family: 'Inter', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.7;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .dark body {
-  background: radial-gradient(circle at 10% 20%, rgba(130, 85, 200, 0.4) 0%, rgba(130, 85, 200, 0) 55%), radial-gradient(circle at 80% 0%, rgba(56, 38, 88, 0.55) 0%, rgba(17, 12, 28, 0.05) 50%), #141020;
-  color: #f4efff;
+  background: radial-gradient(circle at 12% 18%, rgba(157, 123, 222, 0.32) 0%, rgba(11, 6, 22, 0) 56%), radial-gradient(circle at 82% 6%, rgba(74, 49, 128, 0.42) 0%, rgba(11, 6, 22, 0) 50%), var(--body-bg);
+  color: var(--body-text);
 }
 
 a {
@@ -72,10 +82,25 @@ a:focus-visible {
   text-shadow: 0 0 12px rgba(130, 85, 200, 0.45);
 }
 
+.dark a {
+  color: var(--color-primary-200);
+}
+
+.dark a:hover,
+.dark a:focus-visible {
+  color: var(--color-primary-100);
+  text-shadow: 0 0 14px rgba(186, 159, 240, 0.55);
+}
+
 a:hover::after,
 a:focus-visible::after {
   transform: scaleX(1);
   opacity: 0.9;
+}
+
+.dark a:hover::after,
+.dark a:focus-visible::after {
+  opacity: 0.95;
 }
 
 .prose h1,
@@ -178,7 +203,7 @@ main::before {
 
 section.border-b.border-default.py-8 {
   border-radius: 1.75rem;
-  border: 1px solid rgba(130, 85, 200, 0.12);
+  border: 1px solid var(--surface-border);
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 24px 48px rgba(34, 20, 51, 0.12);
   padding: clamp(2rem, 5vw, 3.5rem) clamp(1.75rem, 6vw, 3.5rem);
@@ -186,8 +211,8 @@ section.border-b.border-default.py-8 {
 }
 
 .dark section.border-b.border-default.py-8 {
-  background: rgba(28, 12, 46, 0.92);
-  border-color: rgba(130, 85, 200, 0.35);
+  background: var(--surface-strong);
+  border-color: var(--surface-border);
   box-shadow: 0 28px 60px rgba(10, 5, 16, 0.5);
 }
 
@@ -198,14 +223,14 @@ section.border-b.border-default.py-8 .text-primary {
 div.mt-8.pb-24.space-y-12 {
   background: var(--surface-soft);
   border-radius: 1.75rem;
-  border: 1px solid rgba(130, 85, 200, 0.1);
+  border: 1px solid var(--surface-border);
   box-shadow: 0 18px 44px rgba(34, 20, 51, 0.18);
   padding: clamp(2rem, 4vw, 3rem) clamp(1.6rem, 5vw, 2.6rem);
 }
 
 .dark div.mt-8.pb-24.space-y-12 {
-  background: rgba(22, 15, 32, 0.9);
-  border-color: rgba(130, 85, 200, 0.35);
+  background: var(--surface-soft);
+  border-color: var(--surface-border);
   box-shadow: 0 24px 50px rgba(10, 5, 16, 0.55);
 }
 
