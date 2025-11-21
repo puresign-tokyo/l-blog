@@ -30,7 +30,7 @@ GitHubの機能として[Dependabot](https://docs.github.com/ja/code-security/de
 
 一応ログ収集のためにlokiというログ収集ツールとそれを可視化するためのGrafanaというものを使っています。
 
-![Grafana](/content/article007/grafana.png "Grafana")
+![Grafana](/content/article007/grafana.jpg "Grafana")
 
 えるろだのログは全てこいつに向かって流れます。サーバ管理者はサーバ管理者はここを見つつサーバ状態を確認できます。
 また、当然この画面は私生活では見ないのでエラー等が起きた場合はDiscordに飛ばしてほしいです。ここはalertmanagerというのを使って連携させ、自分しかいないDiscordサーバに通知させています。このサーバに通知があると『またお前かよ…』となります。
