@@ -3,9 +3,9 @@ export default defineNuxtConfig({
   appConfig: {
     header: {
       logo: {
-        light: '/logo.png',
-        dark: '/logo.png',
-        alt: 'Site logo',
+        light: "/logo.png",
+        dark: "/logo.png",
+        alt: "Site logo",
       },
     },
   },
@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@nuxt/content", "@nuxt/eslint"],
-  css: ['~/assets/css/theme.css'],
+  css: ["~/assets/css/theme.css"],
   devtools: { enabled: true },
   future: {
     compatibilityVersion: 4,
