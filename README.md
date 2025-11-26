@@ -1,75 +1,20 @@
-# Nuxt Content Starter
+# えるろだ開発ブログ
 
-Look at the [Nuxt Content documentation](https://content.nuxt.com) to learn more.
+## なんすか
+[えるろだ](https://l-uploader.puresign.tokyo)の開発/運用/保守にあたっての思いの丈を綴るページ
 
-## Setup
+[このページ](https://blog.l-uploader.puresign.tokyo)で稼働中
 
-Make sure to install dependencies:
+## 編集方法
 
-```bash
-# npm
-npm install
+[content](/content)配下にmarkdownを記載すると不思議な力でウェブページになる。
 
-# pnpm
-pnpm install
+画像は[public/content](/public/content)配下に記事毎にディレクトリを掘って記載すること。
 
-# yarn
-yarn install
+## 使用技術
 
-# bun
-bun install
-```
+- Nuxt Content
+- docus
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## うごかす
+read [here](/docs/README.md)
