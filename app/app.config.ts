@@ -12,4 +12,9 @@ export default defineAppConfig({
       neutral: "zinc",
     },
   },
+  seo: {
+    titleTemplate: "%s - えるろだブログ",
+    title: "えるろだブログ",
+    description: "えるろだ開発者ブログ",
+  },
 });
