@@ -3,6 +3,8 @@
 このページは [えるろだ](https://l-uploader.puresign.tokyo) について開発者の視点から諸々のことを書いた記事をまとめたページです。
 
 ## 記事一覧
+
+- 9. [リプ会主専用ダウンローダ ～KARTE](/article009)
 - 8. [バトルKaitaiStruct](/article008)
 - 7. [サービスは呪い](/article007)
 - 6. [けーろだの愚痴とえるろだの保守](/article006)
