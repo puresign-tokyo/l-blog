@@ -14,6 +14,12 @@ export default defineNuxtConfig({
       sqliteConnector: "native",
     },
   },
+  fonts: {
+    families: [
+      { name: "Inter", provider: "none" },
+      { name: "Noto Sans JP", provider: "none" },
+    ],
+  },
   modules: ["@nuxt/content", "@nuxt/eslint"],
   css: ["~/assets/css/theme.css"],
   devtools: { enabled: true },

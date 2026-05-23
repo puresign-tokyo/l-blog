@@ -16,9 +16,23 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      # Pick your own package manager and build script
-      - run: npm install
-      - run: npx nuxt build --preset github_pages
+          cache: pnpm
+      - run: pnpm fetch --frozen-lockfile
+      - run: pnpm install --offline --frozen-lockfile
+      - name: Block outbound network for build
+        run: |
+          sudo iptables-save > /tmp/iptables.rules
+          sudo ip6tables-save > /tmp/ip6tables.rules
+          sudo iptables -A OUTPUT -o lo -j ACCEPT
+          sudo ip6tables -A OUTPUT -o lo -j ACCEPT
+          sudo iptables -P OUTPUT DROP
+          sudo ip6tables -P OUTPUT DROP
+      - run: pnpm exec nuxt build --preset github_pages
+      - name: Restore outbound network
+        if: always()
+        run: |
+          sudo iptables-restore < /tmp/iptables.rules
+          sudo ip6tables-restore < /tmp/ip6tables.rules
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
