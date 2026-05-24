@@ -4,6 +4,7 @@
 
 ## 記事一覧
 
+- 10. [サプライチェーン対策](/article010)
 - 9. [リプ会主専用ダウンローダ ～KARTE](/article009)
 - 8. [バトルKaitaiStruct](/article008)
 - 7. [サービスは呪い](/article007)
